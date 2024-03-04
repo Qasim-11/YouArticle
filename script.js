@@ -36,3 +36,16 @@ function DisplayList() {
     window.location.href = "https://qasim-11.github.io/JavaScriptProject/";
   });
 
+
+  // JavaScript to show loader animation on form submission
+document.getElementById("videoForm").addEventListener("submit", function() {
+  document.getElementById("loader").style.display = "block"; // Show loader
+  document.getElementById("submitButton").style.display = "none"; // Hide submit button
+  // Simulate processing (remove this setTimeout function in your actual implementation)
+  setTimeout(function() {
+      // After processing, hide loader and show submit button again
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("submitButton").style.display = "block";
+  }, 5000); // Simulated processing time (5 seconds)
+});
+
