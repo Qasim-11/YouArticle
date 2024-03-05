@@ -26,6 +26,13 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+.portfolio .portfolio-content {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  grid-gap: 30px;
+}
+
 /* Small */
 @media (min-width: 768px) {
   .container {
@@ -37,12 +44,21 @@ body {
   .container {
     width: 970px;
   }
+
+  .portfolio .portfolio-content {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 30px;
+    margin-top: 80px;
+  }
+  
 }
 /* Large */
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
+
+  
 }
 /* End Global Rules */
 /* Start Components */
@@ -284,12 +300,14 @@ body {
   padding-bottom: var(--section-padding);
   background-color: var(--section-background);
 }
+
 .portfolio .portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px;
   margin-top: 80px;
 }
+
+
 .portfolio .portfolio-content .card {
   background-color: white;
   transition: 0.3s;
