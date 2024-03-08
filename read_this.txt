@@ -1,0 +1,29 @@
+Things we should add to the website : 
+
+1 - In the header of the homepage,
+    we need to add a feature so that the best articls our AI developed are shown in the left and the right of the header homepage,
+    right below the list navigator icon, and below the other black icon in the top left corner, 
+    from where should we take the articles that we will show in this section?
+    that would be for the back-end devs to figure out,
+    for now, we just need to find a way to display articles just like we discussed,
+    I have created some samples in the "sample_articles" folder for you to test your implementation.
+
+2 - Replace old images from my design to better images that are related to the project DONE
+
+3 - Fill in the Eduthon section with some context DONE
+
+4 - Fill in the Contact section DONE
+
+5 - Fix up the [Video to Article / Video to Lab / Video to Quiz]
+
+6 - Fix the text in the website because some of it is misleading,
+for example, the Video to Quiz section is also named Video to Quizzes.
+
+Optional :- 
+
+7 - Choose better colours, for some reason I feel like the colours we chose are dead, maybe gradient stuff might fix up the problem
+
+8 - Add stuff that might make the design better, I mean it's not bad but it's from 2022 :)
+
+9 - Add a very simple video that explains how our model work.
+

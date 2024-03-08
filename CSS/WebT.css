@@ -26,6 +26,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.portfolio-content{
+  grid-template-columns: repeat(1, 1fr); 
+
+}
 /* Small */
 @media (min-width: 768px) {
   .container {
@@ -36,6 +40,10 @@ body {
 @media (min-width: 992px) {
   .container {
     width: 970px;
+  }
+  .portfolio-content {
+    grid-template-columns: repeat(3, 1fr); /* This creates a 2-column grid */
+
   }
 }
 /* Large */
@@ -68,6 +76,32 @@ body {
     margin-top: -20px;
   }
 }
+
+.special-heading2 {
+  color: #d3d3d3;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin: 0;
+}
+.special-heading2 + p {
+  margin: -30px 0 0;
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
+}
+@media (max-width: 767px) {
+  .special-heading2 {
+    font-size: 45px;
+  }
+  .special-heading2 + p {
+    margin-top: -20px;
+  }
+}
+
+
+
 /* End Components */
 /* Start Header */
 .header {
@@ -154,7 +188,7 @@ body {
 /* End Header */
 /* Start Landing Section */
 .landing {
-  background-image: url(../images/landing.jpg);
+  background-image: url(../images/office.webp);
   background-size: cover;
   height: calc(100vh - 64px);
   position: relative;
@@ -388,10 +422,11 @@ body {
 }
 .contact .info .link {
   display: block;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 800;
   color: var(--main-color);
   text-decoration: none;
+  margin-bottom: 50px;
 }
 .contact .info .social {
   display: flex;
@@ -411,7 +446,7 @@ body {
 @media (max-width: 767px) {
   .contact .info .label,
   .contact .info .link {
-    font-size: 25px;
+    font-size: 35px;
   }
   
 }
@@ -432,4 +467,51 @@ body {
 
 
 
+
+/* contant info "emails" */
+
+.contact-info {
+  /* No changes needed here specifically for centering, 
+     but ensure it's not set to full width if you want it visibly centered */
+  width: auto; /* Or set a specific max-width if necessary */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+}
+
+
+.contact-info h3 {
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.email-contact h3{
+  margin-bottom: 50px;
+}
+
+.email-contact a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-bottom: 20px; /* Adjust based on layout */
+  margin-top: 30 px;
+}
+
+.email-contact a i {
+  margin-right: 10px;
+}
+
+.email-contact a:hover {
+  color: var(--main-color);
+}
+
+.social-links a {
+  color: var(--secondary-color);
+  margin-right: 15px;
+}
+
+.social-links a:hover {
+  color: var(--main-color);
+}
 

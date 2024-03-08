@@ -25,15 +25,15 @@ function DisplayList() {
 
 
   document.getElementById("website1").addEventListener("click", function() {
-    window.location.href = " https://qasim-11.github.io/PersonalPage/";
+    window.location.href = "video_to_article.html";
   });
 
   document.getElementById("website2").addEventListener("click", function() {
-    window.location.href = "https://qasim-11.github.io/ColorFliper/";
+    window.location.href = "video_to_lab.html";
   });
 
   document.getElementById("website3").addEventListener("click", function() {
-    window.location.href = "https://qasim-11.github.io/JavaScriptProject/";
+    window.location.href = "video_to_quizzes.html";
   });
 
 
